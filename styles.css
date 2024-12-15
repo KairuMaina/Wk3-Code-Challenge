@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -13,6 +12,16 @@ header {
     padding: 15px;
     text-align: center;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adds spacing between the logo and the title */
+}
+
+header .logo {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    object-fit: fill;
 }
 
 /* Footer */
@@ -42,6 +51,7 @@ footer {
     border-radius: 8px;
     max-height: 90vh;
     overflow-y: auto;
+    margin-right: 20px; /* Adds space to the right */
 }
 
 #films {
@@ -53,9 +63,9 @@ footer {
 .film-item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.2s ease-in-out;
 }
 
 .film-item:hover {
@@ -63,10 +73,10 @@ footer {
 }
 
 .film-item img {
-    width: 50px;
-    height: 75px;
-    object-fit: cover;
-    margin-right: 10px;
+    width: 100%; /* Adjust to ensure full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image fits within the box */
+    margin-bottom: 10px; /* Add spacing between images */
 }
 
 .film-item p {
@@ -77,7 +87,7 @@ footer {
 /* Film Details (Right Side) */
 .film-details {
     width: 75%;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -128,6 +138,7 @@ footer {
 
 .film-details {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .film-item img {
