@@ -10,16 +10,16 @@ header {
     background-color: white;
     color: black;
     padding: 15px;
-    text-align: center;
+    text-align: right;
     font-size: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px; /* Adds spacing between the logo and the title */
+    justify-content: flex-start;
+    gap: 1000px; /* Adds spacing between the logo and the title */
 }
 
 header .logo {
-    width: 250px; /* Adjust size as needed */
+    width: 200px; /* Adjust size as needed */
     height: auto;
     object-fit: fill;
 }
@@ -83,6 +83,11 @@ footer {
     font-size: 1rem;
     margin: 0;
 }
+
+.film-item img {
+    will-change: transform;
+}
+
 
 /* Film Details (Right Side) */
 .film-details {
@@ -153,4 +158,8 @@ footer {
 #buy-ticket-btn {
     padding: 8px 16px;
     font-size: 0.9rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
